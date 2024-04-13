@@ -8,7 +8,13 @@ public class ReverseSentence {
         for (int i = sentece.length() - 1; i >= 0; i--) {
             text += sentece.charAt(i);
         }
-        System.out.println(text);
 
+        String[] split = text.split(" ");
+        String txt = "";
+        for (int i = split.length - 1;i >= 0; i--) {
+            txt += split[i] + " ";
+        }
+        text = txt.trim();
+        System.out.print(text);
     }
 }
